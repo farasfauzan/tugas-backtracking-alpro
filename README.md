@@ -12,19 +12,18 @@
 ---
 
 ## 1. Deskripsi Masalah
-[cite_start]Tugas ini mengimplementasikan algoritma Backtracking untuk menyelesaikan masalah **N-Queen Problem**[cite: 425]. [cite_start]Tujuannya adalah meletakkan sejumlah N bidak ratu pada papan catur berukuran NxN[cite: 448]. 
-
-[cite_start]Batasan (*constraint*) utama dari permasalahan ini adalah semua bidak ratu tidak boleh bisa memakan dengan 1 langkah[cite: 450]. Secara spesifik:
-* [cite_start]Satu kolom tidak boleh lebih dari satu bidak ratu[cite: 452].
-* [cite_start]Satu baris tidak boleh lebih dari satu bidak ratu[cite: 454].
-* [cite_start]Diagonal tidak boleh berisi lebih dari satu bidak ratu[cite: 456].
+Tugas ini mengimplementasikan algoritma Backtracking untuk menyelesaikan masalah **N-Queen Problem**. Tujuannya adalah meletakkan sejumlah N bidak ratu pada papan catur berukuran NxN[cite: 448]. 
+Batasan (*constraint*) utama dari permasalahan ini adalah semua bidak ratu tidak boleh bisa memakan dengan 1 langkah. Secara spesifik:
+* Satu kolom tidak boleh lebih dari satu bidak ratu.
+* Satu baris tidak boleh lebih dari satu bidak ratu.
+* Diagonal tidak boleh berisi lebih dari satu bidak ratu.
 
 ## 2. Penjelasan Logika Algoritma
-[cite_start]Penyelesaian masalah dilakukan menggunakan teknik Backtracking, yaitu mencari solusi secara *incremental* (satu per satu) dan meng-eliminasi solusi yang tidak sesuai dengan kondisi batasan[cite: 320]. Logika berjalannya program:
-1. [cite_start]Program mengecek apakah semua bidak ratu (N) sudah diletakkan[cite: 458]. [cite_start]Jika ya, sudahi program[cite: 461].
-2. [cite_start]Jika belum, mulai dari kiri atas, cek apakah aman untuk diletakkan bidak ratu[cite: 463, 465].
-3. [cite_start]Jika aman, letakkan ratu dan geser ke baris selanjutnya[cite: 467]. [cite_start]Jika tidak aman, geser ke kolom selanjutnya[cite: 468].
-4. [cite_start]Jika tidak ada jalan yang aman, berhenti, tandai cabang ini sebagai *unsolved*, dan lanjutkan untuk cabang yang lain ke langkah pertama (Proses *Backtrack*)[cite: 473].
+Penyelesaian masalah dilakukan menggunakan teknik Backtracking, yaitu mencari solusi secara *incremental* (satu per satu) dan meng-eliminasi solusi yang tidak sesuai dengan kondisi batasan. Logika berjalannya program:
+1. Program mengecek apakah semua bidak ratu (N) sudah diletakkan. Jika ya, sudahi program.
+2. Jika belum, mulai dari kiri atas, cek apakah aman untuk diletakkan bidak ratu.
+3. Jika aman, letakkan ratu dan geser ke baris selanjutnya. Jika tidak aman, geser ke kolom selanjutnya.
+4. Jika tidak ada jalan yang aman, berhenti, tandai cabang ini sebagai *unsolved*, dan lanjutkan untuk cabang yang lain ke langkah pertama (Proses *Backtrack*).
 
 ## 3. Pseudocode Algoritma
 
