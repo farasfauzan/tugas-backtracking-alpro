@@ -12,7 +12,7 @@
 ---
 
 ## 1. Deskripsi Masalah
-Tugas ini mengimplementasikan algoritma Backtracking untuk menyelesaikan masalah **N-Queen Problem**. Tujuannya adalah meletakkan sejumlah N bidak ratu pada papan catur berukuran NxN[cite: 448]. 
+Tugas ini mengimplementasikan algoritma Backtracking untuk menyelesaikan masalah **N-Queen Problem**. Tujuannya adalah meletakkan sejumlah N bidak ratu pada papan catur berukuran NxN. 
 Batasan (*constraint*) utama dari permasalahan ini adalah semua bidak ratu tidak boleh bisa memakan dengan 1 langkah. Secara spesifik:
 * Satu kolom tidak boleh lebih dari satu bidak ratu.
 * Satu baris tidak boleh lebih dari satu bidak ratu.
